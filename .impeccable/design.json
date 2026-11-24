@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T00:00:00Z",
+  "title": "Design System: Adca",
+  "extensions": {
+    "colorMeta": {
+      "rich-black": { "role": "neutral", "displayName": "Rich Black", "canonical": "#0E0B12", "tonalRamp": ["#060508", "#0E0B12", "#17131E", "#25202D", "#3A3443", "#5A5463", "#8C8794", "#D9D6DE"] },
+      "rich-black-raised": { "role": "neutral", "displayName": "Raised Black", "canonical": "#17131E", "tonalRamp": ["#0E0B12", "#17131E", "#211C2A", "#2E2838", "#443D4F", "#655E70", "#9690A0", "#DCD9E2"] },
+      "indigo-night": { "role": "secondary", "displayName": "Indigo Night", "canonical": "#1C1347", "tonalRamp": ["#0F0A28", "#1C1347", "#24185A", "#3B2A86", "#5A47AE", "#6E5BC4", "#A89EE0", "#E6E2F7"] },
+      "violet-indigo": { "role": "secondary", "displayName": "Violet Indigo", "canonical": "#24185A", "tonalRamp": ["#0F0A28", "#1C1347", "#24185A", "#3B2A86", "#5A47AE", "#6E5BC4", "#A89EE0", "#E6E2F7"] },
+      "violet-indigo-bright": { "role": "secondary", "displayName": "Bright Violet Indigo", "canonical": "#3B2A86", "tonalRamp": ["#0F0A28", "#1C1347", "#24185A", "#3B2A86", "#5A47AE", "#6E5BC4", "#A89EE0", "#E6E2F7"] },
+      "violet-indigo-soft": { "role": "secondary", "displayName": "Soft Violet Indigo", "canonical": "#6E5BC4", "tonalRamp": ["#0F0A28", "#1C1347", "#24185A", "#3B2A86", "#5A47AE", "#6E5BC4", "#A89EE0", "#E6E2F7"] },
+      "glamour-gold": { "role": "primary", "displayName": "Glamour Gold", "canonical": "#C9A23A", "tonalRamp": ["#2E230A", "#4F3D12", "#7A5F1D", "#A5822C", "#C9A23A", "#DDB94F", "#EDD58D", "#FAF0D2"] },
+      "glamour-gold-hi": { "role": "primary", "displayName": "Gold Highlight", "canonical": "#DDB94F", "tonalRamp": ["#2E230A", "#4F3D12", "#7A5F1D", "#A5822C", "#C9A23A", "#DDB94F", "#EDD58D", "#FAF0D2"] },
+      "ivory-white": { "role": "neutral", "displayName": "Ivory White", "canonical": "#FAF6EA", "tonalRamp": ["#2A2720", "#4A463B", "#787160", "#A49C87", "#C9C0A8", "#DDD4BF", "#F1EBD9", "#FAF6EA"] },
+      "ivory-shade": { "role": "neutral", "displayName": "Ivory Shade", "canonical": "#F1EBD9", "tonalRamp": ["#2A2720", "#4A463B", "#787160", "#A49C87", "#C9C0A8", "#DDD4BF", "#F1EBD9", "#FAF6EA"] },
+      "on-dark": { "role": "neutral", "displayName": "On Dark", "canonical": "rgba(250, 246, 234, 0.92)" },
+      "on-dark-muted": { "role": "neutral", "displayName": "On Dark Muted", "canonical": "rgba(250, 246, 234, 0.72)" },
+      "on-dark-faint": { "role": "neutral", "displayName": "On Dark Faint", "canonical": "rgba(250, 246, 234, 0.6)" },
+      "line-dark": { "role": "neutral", "displayName": "Dark Hairline", "canonical": "rgba(250, 246, 234, 0.16)" },
+      "ink-muted": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#4E4858", "tonalRamp": ["#1A1720", "#2B2732", "#3B3645", "#4E4858", "#6A6474", "#8C8796", "#B8B4C0", "#E4E2E8"] },
+      "line-light": { "role": "neutral", "displayName": "Light Hairline", "canonical": "#DDD4BF", "tonalRamp": ["#2A2720", "#4A463B", "#787160", "#A49C87", "#C9C0A8", "#DDD4BF", "#F1EBD9", "#FAF6EA"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Empty, loading, and error headlines on the Indigo Night stage." },
+      "headline": { "displayName": "Headline", "purpose": "Dish name over the photo in the feed; recipe title uses the same voice at clamp(40px, 5vw, 80px)." },
+      "title": { "displayName": "Title", "purpose": "Reading-sheet section heads and the panel title (28px)." },
+      "body": { "displayName": "Body", "purpose": "Captions, form values, empty-state copy." },
+      "body-reading": { "displayName": "Body Reading", "purpose": "Ingredients and method on the ivory sheet, max 68ch." },
+      "label": { "displayName": "Label", "purpose": "Buttons and tabs, uppercase." },
+      "label-small": { "displayName": "Label Small", "purpose": "Field labels and the queue heading, uppercase." },
+      "readout": { "displayName": "Readout", "purpose": "Match readouts, numerals, counts, hints; tabular and zero-padded." }
+    },
+    "shadows": [
+      { "name": "floating-list", "value": "0 12px 32px rgba(0, 0, 0, 0.45)", "purpose": "Ingredient autocomplete over the panel." },
+      { "name": "bottom-sheet", "value": "0 -12px 40px rgba(0, 0, 0, 0.5)", "purpose": "Mobile filters sheet rising over the stage." },
+      { "name": "photo-scrim", "value": "linear-gradient(to top, #0E0B12 0%, rgba(14, 11, 18, 0.9) 28%, rgba(14, 11, 18, 0.45) 48%, rgba(14, 11, 18, 0) 66%), linear-gradient(to bottom, rgba(14, 11, 18, 0.45) 0%, rgba(14, 11, 18, 0) 18%)", "purpose": "Legibility layer over every full-bleed dish photo." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Reveals: slide caption, mobile sheet, loading pulse." },
+      { "name": "duration-state", "value": "0.2s", "purpose": "Colour, border, and background transitions on controls." },
+      { "name": "duration-reveal", "value": "0.6s", "purpose": "Active slide text rising from 50% opacity and 10px low." },
+      { "name": "duration-sheet", "value": "0.45s", "purpose": "Mobile filters sheet slide-up." },
+      { "name": "pulse", "value": "1.6s ease-out infinite, scale 0.7 to 1.3, opacity 1 to 0", "purpose": "Gold ring loading indicator." },
+      { "name": "reduced-motion", "value": "transitions 0.01ms, animations off, no smooth scroll", "purpose": "prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "queue-drop", "value": "1180px" },
+      { "name": "mobile", "value": "860px" },
+      { "name": "narrow", "value": "420px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "The one primary action per view on dark grounds.",
+      "html": "<button class=\"ds-btn ds-btn-gold\">Find dishes</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 22px; border: 1px solid transparent; border-radius: 4px; font-family: 'Jost Variable', 'Jost', system-ui, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; transition: background-color 0.2s, border-color 0.2s, color 0.2s; } .ds-btn-gold { background: #C9A23A; color: #0E0B12; } .ds-btn-gold:hover { background: #DDB94F; } .ds-btn:focus-visible { outline: 2px solid #C9A23A; outline-offset: 2px; }"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Export actions on the ivory reading sheet, with an 18px leading outline icon.",
+      "html": "<div style=\"background:#FAF6EA;padding:16px\"><button class=\"ds-btn-dark\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"9\" width=\"11\" height=\"11\" rx=\"1.5\"/><path d=\"M5 15V5a1 1 0 0 1 1-1h10\"/></svg>Copy text</button></div>",
+      "css": ".ds-btn-dark { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 22px; border: 1px solid transparent; border-radius: 4px; background: #0E0B12; color: #FAF6EA; font-family: 'Jost Variable', 'Jost', system-ui, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; transition: background-color 0.2s; } .ds-btn-dark:hover { background: #3B2A86; } .ds-btn-dark:focus-visible { outline: 2px solid #3B2A86; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary actions over photos and dark empty states.",
+      "html": "<div style=\"background:#1C1347;padding:16px\"><button class=\"ds-btn-ghost\">Adjust search</button></div>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 1px solid rgba(250, 246, 234, 0.45); border-radius: 4px; background: rgba(14, 11, 18, 0.25); color: #FAF6EA; font-family: 'Jost Variable', 'Jost', system-ui, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; transition: background-color 0.2s, border-color 0.2s; } .ds-btn-ghost:hover { background: rgba(250, 246, 234, 0.1); border-color: #FAF6EA; } .ds-btn-ghost:focus-visible { outline: 2px solid #C9A23A; outline-offset: 2px; }"
+    },
+    {
+      "name": "Panel Input",
+      "kind": "input",
+      "refersTo": "input-panel",
+      "description": "Text field on the violet indigo panel, with a tracked-caps label and mono hint.",
+      "html": "<div class=\"ds-panel\"><label class=\"ds-label\" for=\"ds-dish\">Dish name</label><input id=\"ds-dish\" class=\"ds-input\" placeholder=\"Pasta, curry, tacos...\"><p class=\"ds-hint\">Press Enter after each one.</p></div>",
+      "css": ".ds-panel { background: #24185A; padding: 28px; display: flex; flex-direction: column; gap: 8px; } .ds-label { font-family: 'Jost Variable', 'Jost', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250, 246, 234, 0.72); } .ds-input { width: 100%; min-height: 44px; padding: 10px 12px; background: rgba(14, 11, 18, 0.35); border: 1px solid rgba(250, 246, 234, 0.22); border-radius: 4px; font-family: 'Merriweather', Georgia, serif; font-size: 15px; color: #FAF6EA; transition: border-color 0.2s; } .ds-input::placeholder { color: rgba(250, 246, 234, 0.6); } .ds-input:focus { border-color: #C9A23A; outline: none; } .ds-input:focus-visible { box-shadow: 0 0 0 1px #C9A23A; } .ds-hint { margin: 0; font-family: 'Geist Mono Variable', 'Geist Mono', monospace; font-size: 12px; color: rgba(250, 246, 234, 0.6); }"
+    },
+    {
+      "name": "Ingredient Chip",
+      "kind": "chip",
+      "refersTo": "chip-ingredient",
+      "description": "Ivory chip for each pantry ingredient, with a circular remove target.",
+      "html": "<div style=\"background:#24185A;padding:16px\"><span class=\"ds-chip\">garlic<button class=\"ds-chip-x\" aria-label=\"Remove garlic\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><path d=\"M6 6l12 12\"/><path d=\"M18 6 6 18\"/></svg></button></span></div>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 4px; padding: 4px 4px 4px 12px; background: #FAF6EA; color: #24185A; border-radius: 4px; font-family: 'Jost Variable', 'Jost', sans-serif; font-weight: 500; font-size: 15px; } .ds-chip-x { display: grid; place-items: center; width: 26px; height: 26px; border: 0; border-radius: 50%; background: none; color: #3B2A86; cursor: pointer; } .ds-chip-x:hover { background: #F1EBD9; } .ds-chip-x:focus-visible { outline: 2px solid #C9A23A; outline-offset: 2px; }"
+    },
+    {
+      "name": "Leave-out Toggle",
+      "kind": "chip",
+      "refersTo": "toggle-leave-out",
+      "description": "Pill checkbox for intolerances; checked fills gold and strikes the word through.",
+      "html": "<div style=\"background:#24185A;padding:16px;display:flex;gap:8px\"><label class=\"ds-toggle\"><input type=\"checkbox\"><span>Dairy</span></label><label class=\"ds-toggle\"><input type=\"checkbox\" checked><span>Gluten</span></label></div>",
+      "css": ".ds-toggle { position: relative; cursor: pointer; } .ds-toggle input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; } .ds-toggle span { display: inline-block; padding: 6px 12px; border: 1px solid rgba(250, 246, 234, 0.3); border-radius: 999px; font-family: 'Jost Variable', 'Jost', sans-serif; font-size: 14px; color: rgba(250, 246, 234, 0.72); transition: background-color 0.2s, color 0.2s, border-color 0.2s; } .ds-toggle:hover span { border-color: #FAF6EA; color: #FAF6EA; } .ds-toggle input:checked + span { background: #C9A23A; border-color: #C9A23A; color: #0E0B12; text-decoration: line-through; text-decoration-thickness: 1px; } .ds-toggle input:focus-visible + span { outline: 2px solid #C9A23A; outline-offset: 2px; }"
+    },
+    {
+      "name": "Top Bar Navigation",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Wordmark and tracked-caps tabs with a gold underline on the active tab.",
+      "html": "<header class=\"ds-topbar\"><a class=\"ds-wordmark\" href=\"#\">Adca</a><nav class=\"ds-tabs\"><a class=\"ds-tab is-active\" href=\"#\">Search</a><a class=\"ds-tab\" href=\"#\">Recommend</a></nav></header>",
+      "css": ".ds-topbar { height: 60px; display: flex; align-items: center; gap: 40px; padding: 0 24px; background: #0E0B12; border-bottom: 1px solid rgba(250, 246, 234, 0.16); } .ds-wordmark { font-family: 'Jost Variable', 'Jost', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 0.01em; text-decoration: none; color: #FAF6EA; } .ds-tabs { display: flex; gap: 28px; height: 100%; } .ds-tab { display: flex; align-items: center; padding-top: 2px; font-family: 'Jost Variable', 'Jost', sans-serif; font-weight: 500; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250, 246, 234, 0.72); text-decoration: none; border-bottom: 2px solid transparent; transition: color 0.2s; } .ds-tab:hover { color: #FAF6EA; } .ds-tab.is-active { color: #FAF6EA; border-bottom-color: #C9A23A; } .ds-tab:focus-visible { outline: 2px solid #C9A23A; outline-offset: 2px; }"
+    },
+    {
+      "name": "Action Rail Button",
+      "kind": "custom",
+      "description": "Gold outline icon in a circle with a tracked-caps label; stacks on the right edge of each dish.",
+      "html": "<div style=\"background:#0E0B12;padding:16px;display:flex;gap:16px\"><button class=\"ds-rail-btn\"><svg class=\"ds-rail-icon\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7\"/><path d=\"M9 7h8v8\"/></svg><span>Open</span></button><button class=\"ds-rail-btn\"><svg class=\"ds-rail-icon\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6 9 6 6 6-6\"/></svg><span>Next</span></button></div>",
+      "css": ".ds-rail-btn { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 64px; padding: 0; border: 0; background: none; color: #FAF6EA; cursor: pointer; font-family: 'Jost Variable', 'Jost', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; } .ds-rail-icon { box-sizing: content-box; padding: 12px; border: 1px solid rgba(201, 162, 58, 0.7); border-radius: 50%; background: rgba(14, 11, 18, 0.45); color: #C9A23A; transition: background-color 0.2s, color 0.2s; } .ds-rail-btn:hover .ds-rail-icon { background: #C9A23A; color: #0E0B12; } .ds-rail-btn:focus-visible { outline: 2px solid #C9A23A; outline-offset: 2px; }"
+    },
+    {
+      "name": "Up Next Queue Item",
+      "kind": "custom",
+      "refersTo": "queue-item-active",
+      "description": "Ranked row with mono number, Jost name, and mono have/need meta; the active row fills indigo.",
+      "html": "<div style=\"background:#0E0B12;width:300px\"><button class=\"ds-queue-item is-active\"><span class=\"ds-queue-n\">01</span><span class=\"ds-queue-name\">Chicken Fajita Stuffed Bell Pepper</span><span class=\"ds-queue-meta\">have 3 · need 2</span></button><button class=\"ds-queue-item\"><span class=\"ds-queue-n\">02</span><span class=\"ds-queue-name\">Easy Homemade Rice and Beans</span><span class=\"ds-queue-meta\">have 2 · need 2</span></button></div>",
+      "css": ".ds-queue-item { width: 100%; display: grid; grid-template-columns: 30px 1fr; gap: 2px 8px; padding: 12px 20px; border: 0; border-top: 1px solid rgba(250, 246, 234, 0.16); background: none; text-align: left; cursor: pointer; transition: background-color 0.2s; } .ds-queue-item:hover { background: rgba(59, 42, 134, 0.3); } .ds-queue-item.is-active { background: #24185A; } .ds-queue-n { grid-row: span 2; padding-top: 3px; font-family: 'Geist Mono Variable', 'Geist Mono', monospace; font-size: 12px; color: rgba(250, 246, 234, 0.6); font-variant-numeric: tabular-nums; } .ds-queue-name { font-family: 'Jost Variable', 'Jost', sans-serif; font-size: 15px; font-weight: 500; line-height: 1.3; color: rgba(250, 246, 234, 0.92); } .ds-queue-item.is-active .ds-queue-name { color: #C9A23A; } .ds-queue-meta { font-family: 'Geist Mono Variable', 'Geist Mono', monospace; font-size: 12px; color: rgba(250, 246, 234, 0.6); font-variant-numeric: tabular-nums; } .ds-queue-item:focus-visible { outline: 2px solid #C9A23A; outline-offset: -2px; }"
+    },
+    {
+      "name": "Reading Checklist Row",
+      "kind": "custom",
+      "refersTo": "reading-sheet",
+      "description": "Ingredient row on the ivory sheet; done rows strike through in gold.",
+      "html": "<ul class=\"ds-checklist\"><li><label class=\"ds-check\"><input type=\"checkbox\"><span class=\"ds-check-box\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg></span><span class=\"ds-check-text\">2 cloves garlic, minced</span></label></li></ul>",
+      "css": ".ds-checklist { list-style: none; margin: 0; padding: 16px; background: #FAF6EA; } .ds-checklist li { border-top: 1px solid #DDD4BF; border-bottom: 1px solid #DDD4BF; } .ds-check { display: flex; align-items: flex-start; gap: 14px; padding: 11px 0; cursor: pointer; position: relative; font-family: 'Merriweather', Georgia, serif; font-size: 17px; line-height: 1.75; color: #0E0B12; } .ds-check input { position: absolute; opacity: 0; width: 1px; height: 1px; } .ds-check-box { flex: none; display: grid; place-items: center; width: 22px; height: 22px; margin-top: 4px; border: 1.5px solid #3B2A86; border-radius: 3px; color: transparent; transition: background-color 0.2s, color 0.2s; } .ds-check input:checked + .ds-check-box { background: #3B2A86; color: #FAF6EA; } .ds-check input:checked ~ .ds-check-text { color: #4E4858; text-decoration: line-through; text-decoration-color: #C9A23A; text-decoration-thickness: 2px; } .ds-check input:focus-visible + .ds-check-box { outline: 2px solid #3B2A86; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dish Under the Spotlight",
+    "overview": "Adca is a dark stage with one lit plate on it. Rich Black is the room, violet indigo is the furniture (the pantry panel, the active queue row, the mobile bar), and the food photograph is the only thing in full colour: it fills its frame edge to edge under a black scrim that rises from the bottom so the Jost title, a gold Geist Mono readout, and a Merriweather caption can sit on it. Glamour Gold is the house light that picks out what you can act on: focus rings, the outline icon rail, the active tab underline, the primary action, the match readout.\n\nWhen the visitor commits to a dish, the room changes. The recipe page splits into a sticky black photo stage on the left and an Ivory White reading sheet on the right, where the accent switches from gold to violet indigo and Merriweather sets the method at 17px with generous leading. The dark world is for choosing; the ivory sheet is for cooking.\n\nDensity is moderate and deliberate: tracked uppercase Jost on every control, hairline rules instead of boxes, mono numerals for every count. Nothing is a card. Results are a vertical scroll-snap feed of full-height dishes, never a thumbnail grid.",
+    "keyCharacteristics": [
+      "Rich Black ground, violet indigo panels, full-bleed photography under a bottom-weighted black scrim.",
+      "Glamour Gold as the single accent on dark grounds; violet indigo as the accent on ivory.",
+      "Jost for titles and tracked-caps controls, Merriweather for anything read as prose, Geist Mono for counts, readouts, and hints.",
+      "Hairline rules (1px) and 4px corners; pills only for toggles and the position counter; circles only for icon buttons.",
+      "One outline icon set: 24px grid, 1.5px stroke, round caps and joins.",
+      "Motion is short colour fades (0.2s) plus a long expo-out ease for reveals and the mobile sheet."
+    ],
+    "rules": [
+      { "name": "The Accent Follows the Ground Rule", "body": "Gold is the accent on black and indigo; Bright Violet Indigo is the accent on ivory. Gold is never text on ivory.", "section": "colors" },
+      { "name": "The Photograph Is the Colour Rule", "body": "The interface stays within black, indigo, gold, and ivory so the dish photo is the only full-spectrum element on screen.", "section": "colors" },
+      { "name": "The Three Voices Rule", "body": "Jost names things and labels actions, Merriweather speaks in sentences, Geist Mono counts. Do not set a sentence in Jost or a number readout in Merriweather.", "section": "typography" },
+      { "name": "The Tracked Caps Rule", "body": "Every button and tab is uppercase Jost at 0.14em tracking (0.1em at the small size). The text-link button is the only exception: sentence case, underlined.", "section": "typography" },
+      { "name": "The Float-Only Shadow Rule", "body": "A shadow means the element sits above another layer (dropdown, sheet). Resting surfaces never carry one.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Glamour Gold for the one primary action per view, for focus, and for readouts on dark grounds; switch to Bright Violet Indigo for the same jobs on the ivory sheet.",
+      "Do set every count and numeral in Geist Mono with tabular figures, zero-padded where it ranks (01, 02).",
+      "Do put text on photography only over the bottom scrim, and back any control on a photo with a translucent black fill.",
+      "Do keep controls at least 44px tall (48px for primary buttons) and give every interactive element the 2px focus outline.",
+      "Do use 1px hairlines (`line-dark` on dark, `line-light` on ivory) to separate rows instead of boxing them.",
+      "Do honour reduced motion: smooth scroll and transitions switch off and slide text shows at full opacity."
+    ],
+    "donts": [
+      "Don't present results as a grid of thumbnail cards; one dish fills the frame at a time.",
+      "Don't set gold text on the ivory sheet; gold appears there only as the strike-through line.",
+      "Don't add shadows to resting surfaces; reserve them for the dropdown and the mobile sheet.",
+      "Don't introduce a second icon style, filled icons, or emoji and text glyphs as icons; extend the 24px, 1.5px-stroke outline set.",
+      "Don't round controls beyond 4px; pills belong to toggles and the position counter, circles to icon buttons.",
+      "Don't set prose in Jost or readouts in Merriweather."
+    ]
+  }
+}

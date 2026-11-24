@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist mono",
+        "createdAt": "2026-11-24T19:30:27.478Z",
+        "reason": "user pinned Geist Mono for flavor text in the /impeccable design request"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-11-24T19:30:27.698Z",
+        "reason": "user pinned Ivory White in the palette; throwaway decision sketch"
+      }
+    ]
+  }
+}
